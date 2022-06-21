@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<meta charset="utf-8" />
+		<title>Responsywne czy nie Responsywne?</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<img
-			class="image"
-			src="obrazek.jpg"
-			srcset="obrazek.jpg 500w, obrazek.jpg 1000w, obrazek.jpg 1500w"
-			alt="bird"
-		/>
+		<section>
+			<picture>
+				<source media="(max-width: 699px)" srcset="Zwyciestwo-500w.jpg" />
+				<source media="(max-width: 899px)" srcset="Napierdalac-700w.jpg" />
+				<source media="(min-width: 900px)" srcset="Kurwinox-1000w.jpg" />
+				<img src="Kurwinox.jpg" alt="Kurwinox siedzi przy ladzie" />
+			</picture>
+		</section>
 	</body>
 </html>
