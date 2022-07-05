@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script
+			src="https://kit.fontawesome.com/82decfbf13.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="root">
+		<div class="card">
+			<div class="card__background">
+				<picture>
+					<source media="(max-width: 699px)" srcset="konigssee-500w.jpg" />
+					<source media="(max-width: 899px)" srcset="Water-700w.jpg" />
+					<source media="(min-width: 900px)" srcset="konigssee-1000w>jpg" />
+					<img src="prague-1000w.jpg"" alt="mountain" />
+				</picture>
+			</div>
+			<div class="card__box">
+				<h1 class="card__login">
+					<span class="fa-regular fa-envelope"></span>
+					Log in
+				</h1>
+
+				<div class="card__enter_email">
+					<div class="card__email_animation">
+						<input
+							class="card__animation_input"
+							type="email"
+							id="email"
+							placeholder=" "
+							required
+						/>
+						<label class="card__animation_label" for="email">Email</label>
+					</div>
+				</div>
+				<div class="card__enter_password">
+					<div class="card__pass_animation>">
+						<div class="card__pass_animation">
+							<input
+								class="card__animation_input"
+								type="password"
+								id="password"
+								placeholder=" "
+								required
+							/>
+							<label class="card__animation_label" for="password"
+								>Password</label
+							>
+						</div>
+					</div>
+				</div>
+				<div class="card__password_check">
+					<ul>
+						<li class="card__pass_save">
+							<label for="pass_check" class="card__label_pass"
+								>Remember me</label
+							>
+							<input
+								type="checkbox"
+								class="pass_check"
+								id="pass_check"
+								name="password_save"
+								value="yes"
+							/>
+						</li>
+					</ul>
+				</div>
+				<div class="card__btn_sign">
+					<button type="submit" class="header__button">Sign in</button>
+				</div>
+				<div class="card__login_forgot">
+					<a href="https://www.youtube.com/watch?v=o-YBDTqX_ZU"
+						>Forgot password ?</a
+					>
+					<a href="https://www.youtube.com/watch?v=9Ej1gHCRkoY"
+						>Dont have a account?</a
+					>
+				</div>
+				<div class="card__copyright">
+					<p>Copyright ©<a href="Your website">Your website</a> 2022</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
