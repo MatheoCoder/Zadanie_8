@@ -6,7 +6,7 @@
 	padding: 0px;
 }
 
-.card__background > * {
+.card__background {
 	min-width: 100vw;
 	width: 100%;
 	min-height: 100vh;
@@ -63,7 +63,7 @@
 	outline: none;
 	font-size: 1em;
 	color: blue;
-	min-width: 60vmin;
+	min-width: 80%;
 }
 
 .card__animation_label {
@@ -72,6 +72,9 @@
 	color: rgb(79, 42, 171);
 	transform-origin: 0 0;
 	transition: transform 0.2s ease-in-out;
+	background-color: white;
+	margin-left: 3px;
+	padding: 0px 4px;
 }
 .card__animation_input:focus + .card__animation_label,
 .card__animation_input:not(:placeholder-shown) + .card__animation_label {
@@ -145,26 +148,9 @@
 	flex-direction: row;
 	justify-content: center;
 }
-@media screen and (min-width: 600px) {
-	.box {
-		min-width: 200px;
-		width: 60%;
-	}
-}
-@media screen and (min-width: 900px) {
-	.box {
-		min-width: 350px;
+
+@media screen and (max-width: 550px) {
+	.card__box {
 		width: 100%;
-	}
-}
-@media screen and (min-width: 1200px) {
-	.box {
-		min-width: 500px;
-		width: 40%;
-	}
-}
-@media screen and (max-width: 600px) {
-	.box {
-		width: 100%card;
 	}
 }
