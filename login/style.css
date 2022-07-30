@@ -119,7 +119,7 @@
 	cursor: pointer;
 }
 
-.card__btn_sign {
+.card__btn_sign a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
