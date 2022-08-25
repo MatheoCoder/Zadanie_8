@@ -1,0 +1,16 @@
+.root {
+    background-color: rgb(112, 112, 131);
+}
+
+.stopwatch {
+    margin: 300px auto;
+    text-align: center;
+}
+
+.time {
+    font-size: 200px;
+}
+
+button {
+    background-color: rgb(144, 144, 155);
+}
