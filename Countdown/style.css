@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #333;
+}
+
+h1 {
+	margin-bottom: 20px;
+	font-size: 60px;
+	font-weight: lighter;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 30px;
+}
+
+button {
+	margin: 10px;
+	padding: 10px 20px;
+	width: 20%;
+	font-size: 22px;
+	background-color: transparent;
+	cursor: pointer;
+}
+.instruction {
+    font-size: 30px;
+}
+.input {
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    width: 400px;
+}
+#timer {
+	font-size: 72px;
+	margin-top: 50px;
+}
