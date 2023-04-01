@@ -9,13 +9,29 @@ let minutes = 0;
 let seconds = 0;
 
 const handleStart = () => {
-	countTime = setInterval(() => {
-		
-        if (seconds < 9) {
-            seconds++;
-            stopwatch.textContent = '${minutes}:0${seconds}'
-        }
-	}, 1000);
+    clearInterval(countTime);
+
+  countTime = setInterval(() => {
+    seconds++;
+    if (seconds == 60) {
+      minutes++;
+      seconds = 0;
+    }
+    stopwatch.textContent = `${minutes < 10 ? "0" : ""}${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+  }, 100);
 };
 
+const handlePause = () => {
+    clearInterval(countTime)
+}
+
+const handleStop = () => {
+  clearInterval(countTime)
+  stopwatch.textContent = '00:00'
+  seconds = '0';
+  minutes = '0';
+}
+
 startBtn.addEventListener('click', handleStart);
+pauseBtn.addEventListener('click', handlePause);
+stopBtn.addEventListener('click', handleStop);
